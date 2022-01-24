@@ -12,6 +12,14 @@ function checkValidAnswers(myAnswers) {
 var name = prompt("Please enter your name: ");
 
 var gender = prompt("Please enter your gender (male or female): ");
+
+// changes for the task 5 (Thursday)  --------------------------------------------------//
+while((gender != "male")&&(gender != "female")&&(gender != "")) {                       //
+    alert("You have to select one of them (male/female) or leave the field empty!");    //
+    gender = prompt("Please enter your gender (male or female): ");                     //
+}                                                                                       //
+// -------------------------------------------------------------------------------------//
+
 var state;
 if (gender == "male") { state = "Mr. "; } 
 else if (gender == "female") { state = "Ms. "; } 
